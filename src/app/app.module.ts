@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [AppComponent, DashboardComponent],
@@ -21,6 +22,7 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
     MatCardModule,
     MatTableModule,
     CanvasJSAngularChartsModule,
+    FlexLayoutModule,
   ],
   providers: [
     provideAnimationsAsync(),
