@@ -13,7 +13,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [AppComponent, DashboardComponent],
@@ -24,7 +23,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     CanvasJSAngularChartsModule,
     FlexLayoutModule,
-    MatPaginatorModule,
   ],
   providers: [
     provideAnimationsAsync(),

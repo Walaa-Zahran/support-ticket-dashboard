@@ -1,0 +1,21 @@
+h2 {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  text-align: center;
+}
+.stat-card {
+  margin: 10px;
+  margin-bottom: 10px;
+  box-shadow: none;
+}
+table {
+  min-width: 50%;
+  margin: 10px auto;
+}
+mat-card-content {
+  width: 50%;
+  margin: 0 auto;
+}

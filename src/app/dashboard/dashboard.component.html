@@ -1,6 +1,6 @@
-<div fxLayout="row wrap">
+<div fxLayout="row wrap " fxFlexAlign="center">
   <!-- Numeric Stat Cards -->
-  <div fxFlex="50%" fxFlex.sm="100%" *ngIf="this.data?.requests">
+  <div fxFlex="100%" fxFlex.sm="100%" *ngIf="this.data?.requests">
     <mat-card class="stat-card">
       <h2>Open Tickets</h2>
       <p>{{ openTicketsCount }}</p>
@@ -23,17 +23,7 @@
   </div>
 </div>
 <!-- Table -->
-<!-- <div>
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-    <ng-container matColumnDef="supportRep">
-      <th mat-header-cell *matHeaderCellDef>Support Rep</th>
-      <td mat-cell *matCellDef="let element">{{ element.supportRep }}</td>
-    </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-  </table>
-</div> -->
 <table mat-table [dataSource]="dataSource" matSort>
   <!-- Support Rep Column -->
   <ng-container matColumnDef="supportRep">
@@ -51,19 +41,12 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>
 
-<mat-paginator
-  [pageSizeOptions]="[5, 10, 20]"
-  showFirstLastButtons
-></mat-paginator>
-
 <!-- Chart -->
-<div>
-  <mat-card>
-    <mat-card-content>
-      <canvasjs-chart
-        [options]="chartOptions"
-        [styles]="{ width: '100%', height: '360px' }"
-      ></canvasjs-chart>
-    </mat-card-content>
-  </mat-card>
-</div>
+<mat-card style="width: 100%">
+  <mat-card-content>
+    <canvasjs-chart
+      [options]="chartOptions"
+      [styles]="{ width: '100%', height: '360px' }"
+    ></canvasjs-chart>
+  </mat-card-content>
+</mat-card>
